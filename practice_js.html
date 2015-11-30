@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practice JavaScript!</title>
+  <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+</head>
+<body>
+
+  <div id="my-element">Hi guys</div>
+
+  <script type="text/javascript">
+    // $("#my-element")
+    //   .show()
+    //   .addClass("selectable")
+    //   // .click(function (e){
+    //   //   alert("You clicked me!");
+    //   });
+
+    // Events
+    $(function (){
+      $("#my-element").click(function (e){
+          // var paragraphText = $(e.target).text();
+          // alert(paragraphText);
+          $(e.target).slideUp();
+      });
+    });
+
+    // // Get an attribute's value
+    // var id = $("div").attr("id");
+    // console.log(id);
+
+    // // Set an attribute's value
+    // $("div").attr("id", "your-element");
+
+    // // Add a class
+    // $("div").addClass("special");
+
+    // // Remove a class
+    // $("div").removeClass("special");
+
+    // // Add or remove a class depending on whether it is currently there (aka, toggle)
+    // $("div").toggleClass("special");
+    // $("div").toggleClass("special");
+
+    // // Check whether a class exists or not
+    // if ($("div").hasClass("special")){
+    //   alert("It's special alright!");
+    // } else {
+    //   alert("It's average. :(");
+    // }
+
+  </script>
+
+</body>
+</html>
